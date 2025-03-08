@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p,
+button,
+input {
+  font-size: 1.5rem;
+}
+
+.flashcard-container {
+  position: relative;
+  background-color: transparent;
+  width: 760px;
+  height: 400px;
+  perspective: 1000px;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flashcard-inner.flipped {
+  transform: rotateX(180deg);
+}
+
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+  overflow-y: auto;
+  font-size: 1.25rem;
+}
+
+.flashcard-front {
+  background-color: #25cd71;
+  color: black;
+}
+
+.flashcard-back {
+  background-color: #9aeaaf;
+  color: black;
+  transform: rotateX(180deg);
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 0.3em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: lightgreen;
+  cursor: pointer;
+  margin-top: 2rem;
+  width: 100px;
+  text-align: center;
+  font-size: larger;
+  border-radius: 4px;
+  border: 1.5px solid black;
+}
+
+.button:hover {
+  background-color: #009944;
+  filter: drop-shadow(0 2px 2px #006933aa);
+  color: white;
+  outline: none;
+}
+
+body {
+  background-color: #eaeaea;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25cd71;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.modes {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.modes button {
+  background: lightgreen;
+  border: 2px solid black;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.modes button:hover {
+  background-color: #009944;
+  filter: drop-shadow(0 2px 2px #006933aa);
+  color: white;
+  outline: none;
+  transform: scale(1.1);
+}
+
+
+.navbuttons {
+  background: lightgreen;
+  border: 2px solid black;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.navbutton :hover {
+  background-color: #009944;
+  filter: drop-shadow(0 2px 2px #006933aa);
+  color: white;
+  outline: none;
+  transform: scale(1.1);
+}
+
+/* .fillBlank-container {} */
