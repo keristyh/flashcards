@@ -1,10 +1,10 @@
 # Web Development Project 2 - *Flashcards*
 
-Submitted by: **Your Name Here**
+Submitted by: **Keristy Huynh**
 
-This web app: **insert description**
+This web app: **Personal Finance Management Flashcards**
 
-Time spent: **X** hours spent in total
+Time spent: **8** hours spent in total
 
 ## Required Features
 
